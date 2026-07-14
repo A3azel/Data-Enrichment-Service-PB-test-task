@@ -23,6 +23,7 @@ public class ResultPersistenceService {
                 .userId(message.userId())
                 .action(message.action())
                 .result(enrichment.result())
+                .eventTime(message.timestamp())
                 .build();
         return repository.save(entity);
     }

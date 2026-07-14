@@ -4,5 +4,6 @@ CREATE TABLE result (
     user_id     BIGINT       NOT NULL,
     action      VARCHAR(255) NOT NULL,
     result      BOOLEAN      NOT NULL,
+    event_time  TIMESTAMP    NOT NULL, -- timestamp from IncomingMessage
     created_at  TIMESTAMP    NOT NULL
 );

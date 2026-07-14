@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.Instant;
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Entity
@@ -31,6 +32,9 @@ public class EnrichmentResult {
 
     @Column(name = "result", nullable = false)
     private boolean result;
+
+    @Column(name = "event_time", nullable = false, updatable = false)
+    private LocalDateTime eventTime;
 
     @Column(name = "created_at", nullable = false, updatable = false)
     private Instant createdAt;
