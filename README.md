@@ -5,11 +5,12 @@
 
 ## Технологічний стек
 
-- **Java 21**, **Spring Boot 4.1** (Web MVC, Data JPA, AMQP) + Lombok
-- **PostgreSQL** — сховище результатів
-- **RabbitMQ** — вхідна черга та вихідний exchange
-- **Lombok** — скорочення boilerplate
-- **JUnit 5 + Mockito** — unit-тести; **Testcontainers** — інтеграційний тест
+- **Java 21**, **Spring Boot 4.1** (Web MVC, Data JPA, AMQP)
+- **PostgreSQL**
+- **RabbitMQ**
+- **Lombok**
+- **JUnit 5 + Mockito** — unit-тести;
+- **Testcontainers** — інтеграційний тест
 
 ## Потік обробки
 
@@ -70,8 +71,8 @@ mvn spring-boot:run
 
   ### Ідемпотентність
 
-  1. `UNIQUE` на `message_id` — гарантія на рівні БД.
-  2. Попередня перевірка — відсікає більшість дублів.
+  - `UNIQUE` на `message_id` — гарантія на рівні БД.
+  - Попередня перевірка — відсікає більшість дублів.
  
   ### Обробка помилок
 
