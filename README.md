@@ -15,7 +15,7 @@
 ## Потік обробки
 
 ```
-inbound queue -> @RabbitListener -> перевірка дубля -> збагачення (POST, поза транзакцією)
+inbound queue -> @RabbitListener -> перевірка дублікатів -> збагачення (POST, поза транзакцією)
               -> збереження (@Transactional) -> публікація в exchange (після коміту)
 ```
 
