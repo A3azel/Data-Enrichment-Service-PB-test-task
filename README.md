@@ -90,3 +90,4 @@ mvn spring-boot:run
   - `EnrichmentClientImpl` — псевдо-робочий код. HTTP POST через `RestClient`, класифікація 4xx/5xx.
   - `StubEnrichmentClient` — заглушка, за умовами ТЗ.
    
+  >Author: Ihor Losinskyi
